@@ -1,8 +1,8 @@
 # Git Bisect Tutorial
 
 This is a repository to teach the basics of `git bisect`. It simulates finding
-a bug in a file that was intentionally written to make it difficult to use
-`git blame` for the same task.
+a bug in a file and discovering when that bug was introduced. The file was
+intentionally written to make it difficult to use `git blame` for the same task.
 
 ## Challenge
 
@@ -32,7 +32,7 @@ git bisect good v1.0.0
 Now, the bisect should have checked out a halfway point between our known
 good commit and bad commit. Open up `file.txt`. Is the bug
 still there? If there is a bug, call `git bisect bad` again. If we don't
-have a bug, call `git bisect good`. Once again, you'll git will jump to
+have a bug, call `git bisect good`. Once again, git will jump to
 a new halfway point. Look at `file.txt` again. Again, call either
 `git bisect good` or `git bisect bad`. Continue this a few times, and
 you will eventually find the first bad commit that introduced the bug!
