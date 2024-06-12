@@ -9,7 +9,7 @@ intentionally written to make it difficult to use `git blame` for the same task.
 ### Introduction
 
 We have a _very_ important file, called [`file.txt`][buggy-file]. We want to be absolutely
-sure that it doesn't contain any bugs (🐛). If but if you
+sure that it doesn't contain any bugs (🐛). But if you
 [open the file...][buggy-file]
 
 Oh no! There's a bug!
